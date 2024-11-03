@@ -1,0 +1,46 @@
+#HAKKIMDA WEB SAYFASI
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAKKIMDA SAYFASI</title>
+</head>
+<body>
+    <h1>RECEP İVEDİK</h1>
+    <h2>SERBEST MESLEK ERBABI</h2>
+    <img
+    src="https://store.donanimhaber.com/1c/30/5b/1c305be295b6b53b5716d1200a506144.jpg"
+    alt="vesikalık fotoğraf"
+    width=150
+    height=200
+    />
+    <p> Duygusal bir yapıya sahibim. Agresifim, kompleksliyim. Perdelerimi kaldırdığımda kedi gibi bir insanım. 
+        Halı sahada hep 10 numara giyerim.</p>
+
+    <h3>HOBİLERİM</h3>
+    <li>At yarışı</li>
+    <li>Yakın dövüş (daldım mı iyi dalarım)</li>
+    <li>Futbol</li>
+
+    <div>
+        <a href="recepivedik@gmail.com">Mail Adresim</a>
+    </div>
+    <div>
+        <a href="karaambarkamyonculardernegi.com">Kara Ambar Kamyoncular Derneği Hesabım</a>
+    </div>
+    
+    <div> İş teklifiniz varsa aşağa ad soyad bırakın ben değerlendirecem.</div>
+
+    <div>
+        <label for="ad">Ad:</label>
+        <input type="text" id="ad" name="ad">
+    </div>
+    <div>
+        <label for="soyad">Soyad:</label>
+        <input type="text" id="soyad" name="soyad">
+    </div>
+    
+</body>
+</html>
