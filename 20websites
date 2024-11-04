@@ -1,0 +1,65 @@
+#WEBSITE1
+WEBSITE1.HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="website1.css" >
+
+</head>
+<body>
+    <h1>LEARNING COLORS</h1>
+    <div class="box orange">ORANGE</div>
+    <div class="box red">RED</div>
+    <div class="box blue">BLUE</div>
+    <div class="box green">GREEN</div>
+    
+</body>
+</html>
+
+WEBSITE1.CSS
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    height: 100px;
+    width: 150px;
+    margin: 10px;
+    padding: 40px;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.red{
+    background-color:red;
+    height: 60px;
+    width: 400px;
+    margin-top: 50px;
+    margin-left: 250px;
+    padding: 0;
+}
+
+.blue{
+    background-color:blue;
+    height: 150px;
+    margin: 50px 50px 50px 800px;
+}
+
+.green{
+    background-color:green;
+    height: 200px;
+    width: 50px;
+    margin-left: 1300px;
+    margin-right: 0;
+    padding: 100px;
+
+}
