@@ -1,13 +1,93 @@
-#sample websites using html, css, scss, sass
+#SAMPLE WEBSITES USING HTML, CSS, SCSS, SASS
 
-#website0
+#html table example
 .html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>table example</title>
+</head>
+<body>
+    <table border="5" cellpadding="10" cellspacing="5" width="100%">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Last Name</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Arthur</td>
+          <td>Morgan</td>
+          <td>38</td>
+        </tr>
+        <tr>
+          <td>Dutch</td>
+          <td>van der Linde</td>
+          <td>45</td>
+        </tr>
+        <tr>
+          <td>Hakan</td>
+          <td>Dursun</td>
+          <td>17</td>
+        </tr>
+      </tbody>
+    </table>
+</body>
+</html>
+
+#html form example
+.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form example</title>
+</head>
+<body>
+    <h2>USER FORM</h2>
+    <form>
+        <div>
+            <label for="user_name">Name:</label>
+        <input type="text" id="user_name" name="user_name">
+        </div>
+        <br>
+        <div>
+            <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name">
+        </div>
+        <br>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <br>
+        <div>
+            <label>Gender:</label>
+            <label for="woman">Woman</label>
+            <input type="radio" id="woman" name="gender">
+            <label for="man">Man</label>
+            <input type="radio" id="man" name="gender">
+        </div>
+        <br>
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>
+
+
+#creating boxes example
+.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colored boxes</title>
     <link rel="stylesheet" href="website1.css" >
 
 </head>
