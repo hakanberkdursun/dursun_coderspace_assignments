@@ -1,1 +1,1 @@
-ödevimi kaydedecek yer bulamadım vs code dosyası clone olduğu için kafam karışsın istemedim şimdilik burada dursunlar (3.11.2024)
+I do not yet know what this section is for. Don't be mad at me please I'm new... / Bu kısım ne için var daha bilmiyorum.
