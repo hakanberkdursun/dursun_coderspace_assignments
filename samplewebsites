@@ -1,0 +1,411 @@
+#sample websites using html, css, scss, sass
+
+#website0
+.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="website1.css" >
+
+</head>
+<body>
+    <h1>LEARNING COLORS</h1>
+    <div class="box orange">ORANGE</div>
+    <div class="box red">RED</div>
+    <div class="box blue">BLUE</div>
+    <div class="box green">GREEN</div>
+    
+</body>
+</html>
+
+.css
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    height: 100px;
+    width: 150px;
+    margin: 10px;
+    padding: 40px;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.red{
+    background-color:red;
+    height: 60px;
+    width: 400px;
+    margin-top: 50px;
+    margin-left: 250px;
+    padding: 0;
+}
+
+.blue{
+    background-color:blue;
+    height: 150px;
+    margin: 50px 50px 50px 800px;
+}
+
+.green{
+    background-color:green;
+    height: 200px;
+    width: 50px;
+    margin-left: 1300px;
+    margin-right: 0;
+    padding: 100px;
+
+}
+
+#IMAGE AND TEXT
+.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image and text</title>
+    <link rel="stylesheet" href="website2.css">
+</head>
+<body>
+    <div class="castleimage">
+        <h1 class="header">Neuschwanstein Castle</h1>
+        <p class="paragraph">This beautiful castle is in Bavaria, Germany.</p>
+    </div>
+    <div class="box"></div>
+    
+</body>
+</html>
+
+.css
+.castleimage{
+    background-image: url("https://www.travelandleisure.com/thmb/Okqi4CwIGGsdj-Ci-JSN2ZEw8wc=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/01-neuschwanstein-castle-bavaria-NEUSCHWANSTEIN0417-273a040698f24fc1ac22e717bb3f1f0c.jpg");
+    width: 1450px;
+    height: 650px;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    color:white;
+}
+.header{
+    font-size: 50px;
+}
+.paragraph{
+    font-size: 20px;
+}
+@media screen and (max-width: 768px){
+    .header{
+        font-size: 30px;
+    }
+    .paragraph{
+        font-size: 10px;
+    }
+    .castleimage{
+        width: 700px;
+        height: 400px;
+        color:greenyellow;
+    }
+}
+
+
+#css pseudo class example
+.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo Class Example</title>
+    <link rel="stylesheet" href="website3.css">
+</head>
+<body>
+    <h1>CSS PSEUDO CLASS EXAMPLE</h1>
+    <p class="text">
+        This is suppossed to be a paragraph. This is suppossed to be a paragraph. This is suppossed to be a paragraph.
+        This is suppossed to be a paragraph. This is suppossed to be a paragraph. This is suppossed to be a paragraph.
+        This is suppossed to be a paragraph. This is suppossed to be a paragraph. This is suppossed to be a paragraph.
+        This is suppossed to be a paragraph. This is suppossed to be a paragraph. This is suppossed to be a paragraph.
+        This is suppossed to be a paragraph. This is suppossed to be a paragraph. This is suppossed to be a paragraph.
+    </p>
+    <ul>
+        <li class="list_item">ITEM 1</li>
+        <li class="list_item">ITEM 2</li>
+        <li class="list_item">ITEM 3</li>
+        <li class="list_item">ITEM 4</li>
+        <li class="list_item">ITEM 5</li>
+        <li class="list_item">ITEM 6</li>
+        <li class="list_item">ITEM 7</li>
+        <li class="list_item">ITEM 8</li>
+    </ul>
+    <a class="link" href="www.google.com">HERE'S A LINK</a>
+</body>
+</html>
+
+.css
+.link{
+    color: blue;
+}
+.link:active{
+    color:green;
+}
+.link:visited{
+    color:purple;
+}
+.link:hover{
+    color:red;
+}
+.list_item{
+    color: green;
+    list-style-type: none;
+    font-size: 18px;
+}
+.list_item:first-child{
+    color:aqua;
+}
+/* .list_item:nth-child(even){
+    color:blueviolet;
+} */
+.list_item::first-letter{
+    color:grey;
+    font-size: 34px;
+}
+.text::first-line{
+    color:lightskyblue;
+    font-size:18px;
+}
+.list_item:nth-child(n+7){
+    color:goldenrod;
+}
+.text::before{
+    content: "ADDED BEFORE TEXT";
+    color:red;
+    font-size: 22px;
+}
+.text::after{
+    content: "ADDED AFTER TEXT";
+    color:red;
+    font-size: 22px;
+}
+
+
+#text editing example
+.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text editing example</title>
+    <style>
+        .header{
+            color:rgb(194, 19, 194);
+            font-size: 32px;
+        }
+        .text{
+            background-color: black;
+            color:yellow;
+            font-size: 20px;
+        }
+        #text4{
+            color:blue;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <header class="header">HEADER</header>
+    <br>
+    <div class="text">TEXT 1</div>
+    <div class="text">TEXT 2</div>
+    <div class="text">TEXT 3</div>
+    <div id="text4">TEXT 4</div>
+    
+</body>
+</html>
+
+#css flex example
+.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css flex example</title>
+    <link rel="stylesheet" href="website5.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box one">
+            <h1>BOX 1</h1>
+            <p>This is a text inside the box.
+                This is a text inside the box.
+                This is a text inside the box.
+            </p>
+        </div>
+        <div class="box two">
+            <h1>BOX 2</h1>
+            <p>This is a text inside the box.
+                This is a text inside the box.
+                This is a text inside the box.</p>
+        </div>
+        <div class="box three">
+            <h1>BOX 3</h1>
+            <p>This is a text inside the box.
+                This is a text inside the box.
+                This is a text inside the box.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+.css
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+.container{
+    width: 70%;
+    height: 700px;
+    margin: 0 auto;
+    background-color:rgb(162, 169, 175);
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color:orange;
+}
+.one{
+    order: 1
+}
+.two{
+    order: 2
+}
+.three{
+    order: 3
+}
+
+@media screen and (max-width: 700px){
+    .container{
+        flex-direction: column;
+    }
+    .box{
+        background-color:blue;
+    }
+}
+
+
+#css grid example
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid example</title>
+    <link rel="stylesheet" href="website6.css">
+</head>
+<body>
+    <div class="container">
+        <div class="item">ITEM 1</div>
+        <div class="item">ITEM 2</div>
+        <div class="item">ITEM 3</div>
+        <div class="item">ITEM 4</div>
+        <div class="item">ITEM 5</div>
+        <div class="item">ITEM 6</div>
+    </div>
+</body>
+</html>
+
+.css
+.container{
+    height: 600px;
+    background-color:cadetblue;
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    /* grid-template-columns: 150px 150px 150px 150px 150px 150px */
+    /* grid-template-columns: auto auto auto auto auto auto; */
+    /* grid-template-columns: 120px auto auto auto auto 120px; */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* grid-template-columns: repeat(3, 100px); */
+    /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.item{
+    background-color:blueviolet;
+    padding: 20px;
+}
+
+#css animation example
+.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css animation example</title>
+    <link rel="stylesheet" href="website7.css">
+    <style>
+        .box{
+            color:white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">LOADING</div>
+</body>
+</html>
+
+.css
+body{
+    display: flex;
+    height: 100vh;
+    background-color:lightslategrey;
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    width: 150px;
+    height: 70px;
+    background-color:red;
+    margin: 30px;
+    animation: loadingbox 3s ease-in-out infinite;
+}
+
+@keyframes loadingbox {
+    0%{
+        transform: translatex(0px);
+        background-color: red;
+    }
+    50%{
+        transform: translateX(300px);
+        background-color: blue;
+    }
+    100%{
+        transform: translate(0px);
+        background-color: red;
+    }
+}
